@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 # backend
 gem "rails", "~> 3.0.0"
 gem "sqlite3-ruby", :require => "sqlite3"
+gem "regulate"
 
 # auth
 gem "devise", "~> 1.1.3"

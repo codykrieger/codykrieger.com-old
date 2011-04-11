@@ -1,0 +1,18 @@
+#punchline .left {
+  float: left;
+}
+#punchline .right {
+  float: left;
+  padding: 8px 0 0;
+  margin: 0 0 0 25px;
+  text-align: center;
+  width: 860px;
+}
+#punchline .right h1 { text-align: center; }
+
+.price-info {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 20px;
+}
+.price-info .price { font-weight: bold; color: #000; }

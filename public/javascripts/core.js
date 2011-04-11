@@ -60,3 +60,94 @@
   $(document).ready(Ql.init);
 
 })(jQuery);
+
+$(document).ready(function() {
+  
+  // functions
+  
+  jQuery.fn.center = function () {
+    this.css("margin-left", (this.outerWidth() / -2) + "px");
+    this.css("margin-top", (this.outerHeight() / -2) + "px");
+    return this;
+  }
+  
+  // external links
+  
+  $("a").each(function(i, v) {
+    if ($(v).attr('href').indexOf('http') > -1) {
+      $(v).attr('target','_blank');
+    }
+  });
+  
+  // flash
+  
+  var f = $(".flash");
+  f.center();
+  f.live('click', function() {
+    $(this).stop(true);
+    $(this).hide("drop", { direction: "down" });
+  });
+  f.show("drop", { direction: "up" }).delay(2500).hide("drop", { direction: "down" });
+  
+  // forms
+  
+  var firstInput = $("form input[type=text]:first");
+  var passInput = $("form input[type=password]:first");
+  if (firstInput.val() == "")
+    firstInput.focus();
+  else
+    passInput.focus();
+  
+  $('.autofocus').each(function(i, v) {
+    if ($(v).val() == '')
+      $(v).focus();
+  });
+  
+  // obfuscation
+  
+  $('.obfuscated').each(function(i, v) {
+    var email = $(v).attr('data-value').replace('----', '@').replace('____', '.');
+    $(v).replaceWith('<a href="mailto:' + email + '" class="obfuscated">' + email + '</a>');
+  });
+  
+  // collapsibles and lists
+  
+  $(".expand").click(function() {
+    if ($(this).html() == "+")
+      $(this).html("-");
+    else
+      $(this).html("+");
+    
+    var next = $(this).parent().parent().next("ul");
+    if (next.length > 0) {
+      if (next.filter("ul:visible").length > 0)
+        next.hide("blind", "fast");
+      else
+        next.show("blind", "fast");
+    }
+    
+    return false;
+  });
+  
+  // orbit
+  
+  $(window).load(function() {
+    $('.slider').each(function(i, v) {
+      $(v).orbit({
+    		'bullets': true,
+    		'timer' : true,
+    		'advanceSpeed' : 7000,
+    		'animation' : 'horizontal-slide'
+    	});
+    });
+  });
+  
+  // lightbox_me
+  
+  $('a.lightbox, button.lightbox, input.lightbox').click(function() {
+    var e = '#' + $(this).attr('data-lightbox');
+    $(e).lightbox_me({centered: true});
+    return false;
+  });
+  
+});

@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
     return !!self.roles.find_by_name( Role.sanitize role )
   end
 
-def destroy
+  def destroy
     self.update_attribute(:deleted_at, Time.now.utc)
   end
 

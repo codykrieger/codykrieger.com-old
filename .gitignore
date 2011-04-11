@@ -8,3 +8,4 @@ public/system/**/**/**/*
 .idea/*
 .sass-cache/**/*
 *.swp
+tmp/restart.txt

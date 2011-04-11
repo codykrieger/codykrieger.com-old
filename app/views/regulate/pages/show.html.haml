@@ -1,0 +1,16 @@
+%h2= @page.title
+%cite
+  by, #{@page.versions.first.author.name}
+- if !@page.published?
+  %div
+    THIS PAGE HAS NOT YET BEEN PUBLISHED
+%div
+  = raw @page.rendered
+%ul
+  - @page.versions.each do |version|
+    %li
+      Author: #{version.author.name}
+      %br/
+      Commit Message: #{version.message}
+      %br/
+      Authored Date: #{version.authored_date}

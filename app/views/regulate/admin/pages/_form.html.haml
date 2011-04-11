@@ -1,0 +1,37 @@
+:css
+  fieldset {width:600px;float:left;}
+  .form_row, label, textarea, #page_title {clear:both;width:100%;float:left;}
+  label {padding:10px 0;text-transform:capitalize;}
+  textarea {height:250px;}
+  #edit_regions textarea {height:150px;}
+  .form_row {padding:10px 0 10px 0;}
+= form_for([:regulate , :admin , @page], :as => :page)  do |f|
+  %fieldset#page_form
+    #custom_field_errors
+    - if !@page.persisted?
+      .form_row
+        = f.label :title
+        = f.text_field :title
+    - else
+      .form_row
+        Title: #{@page.title}
+    .form_row
+      = f.label :published
+      = f.check_box :published
+    - if @is_admin
+      .form_row
+        = f.label :view
+        = f.text_area :view
+    - else
+      .form_row
+        View:
+        %br/
+        = @page.view
+        = f.hidden_field :view
+    #edit_regions
+    .form_row
+      = f.submit "Save"
+      = link_to "Cancel" , regulate_admin_regulate_pages_path
+= javascript_tag "var existing_custom_fields = #{@page.edit_regions.to_json}"
+= javascript_include_tag "jquery.min.js"
+= javascript_include_tag "regulate_admin"

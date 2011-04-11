@@ -1,0 +1,24 @@
+= form_for([:admin, @user])  do |f|
+  .form_errors
+    = f.error_messages
+  %fieldset#user_form
+    .form_row
+      = f.label :name
+      = f.text_field :name
+    .form_row
+      = f.label :email
+      = f.text_field :email
+    .form_row
+      = f.label :password
+      = f.password_field :password
+    .form_row
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation
+    .form_row
+      - Role.find(:all, :order => "name").each do |role|
+        .check_box_item
+          = check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role), :id => "user_role_#{role.id}"
+          %label{:for => "user_role_#{role.id}"}= role.name.humanize
+      = hidden_field_tag "user[role_ids][]", ""
+    .form_row.form_row_button
+      = f.submit "Save"

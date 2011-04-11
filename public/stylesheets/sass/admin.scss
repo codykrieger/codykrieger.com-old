@@ -1,0 +1,11 @@
+@import "partials/admin_variables";
+@import "partials/fonts";
+@import "partials/defaults";
+@import "partials/media";
+
+@mixin admin {
+  @include fonts;
+  @include defaults;
+  @include media;
+}
+@include admin;

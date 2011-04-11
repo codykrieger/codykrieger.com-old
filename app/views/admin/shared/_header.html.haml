@@ -1,0 +1,8 @@
+%header#main_admin_header
+  %h1= link_to 'Codykrieger.com', root_path
+= render 'admin/shared/messages'
+%nav#main_admin_nav
+  %ul
+    %li= link_to 'Home', root_path
+  %ul#user_admin_nav
+    = render 'devise/menu/login_items'

@@ -1,0 +1,20 @@
+- if !@users.blank?
+  %table
+    %thead
+      %tr
+        %th Name
+        %th Email
+        %th
+    %tbody
+      - @users.each do |user|
+        %tr
+          %td= link_to user.name, edit_admin_user_path(user), :class => 'edit_link'
+          %td= user.email
+          %td
+            - if user.id != current_user.id
+              = link_to "Delete", admin_user_path(user), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_link'
+            - else
+              That's you!
+  = will_paginate @users
+- else
+  %p No users

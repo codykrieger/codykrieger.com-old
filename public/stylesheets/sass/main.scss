@@ -1,0 +1,11 @@
+@import "partials/main_variables";
+@import "partials/fonts";
+@import "partials/defaults";
+@import "partials/media";
+
+@mixin main {
+  @include fonts;
+  @include defaults;
+  @include media;
+}
+@include main;

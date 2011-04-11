@@ -1,16 +1,25 @@
 source 'http://rubygems.org'
+
+# backend
 gem "rails", "~> 3.0.0"
 gem "sqlite3-ruby", :require => "sqlite3"
+
+# auth
 gem "devise", "~> 1.1.3"
 gem "cancan"
-gem "hoptoad_notifier"
+
+# content
 gem "jammit"
+gem "bluecloth"
 gem "friendly_id", "~> 3.1"
 gem "will_paginate", "~> 3.0.pre2"
 gem "haml", "~> 3.0.21"
 gem "haml-rails"
+
+# doc
 gem "yard"
-gem "bluecloth"
+
+# testing/dev
 gem "rails3-generators", :group => :development
 gem "hpricot", :group => :development
 gem "ruby_parser", :group => :development

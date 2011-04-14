@@ -1,0 +1,22 @@
+input[type=text], input[type=password], textarea { display: block; background: #fff url(../images/input-bg.png) no-repeat 0 0; padding: 3px 5px; margin: 0 0 10px 0; border: 1px solid #bbb; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font: 13px/18px Helvetica Neue, "Arial", Helvetica, Verdana, sans-serif; text-shadow: 0 0 1px #fff; color: #666; }
+select:focus, input[type=text]:focus, input[type=password]:focus, textarea:focus { outline: none; }
+input[type=text]:focus, input[type=password]:focus, textarea:focus { border: 1px dashed #333; color: #333; }
+textarea { width: 550px; height: 250px; }
+select { display: inline-block; margin-top: 6px; }
+
+#errorExplanation { padding: 10px; margin: 0 0 15px 0; border: 1px dashed #e33100; color: #333; }
+#errorExplanation h2 { font-size: 13pt; }
+#errorExplanation ul { margin: 10px 15px 0; list-style-type: lower-roman; list-style-position: inside; }
+#errorExplanation li { font-style: italic; }
+.field_with_errors input[type=text], .field_with_errors input[type=password], .field_with_errors textarea { border: 1px dashed #e33100; }
+.form_row .left, .form_row .right { float: left; }
+.form_row .left + .left, .form_row .right { margin: 0 0 0 15px; }
+.form_row_button { padding: 5px 0 0; }
+
+input.full, textarea.full { width: 945px; }
+textarea.full.wysiwyg { width: 925px; }
+input.half, textarea.half { width: 455px; }
+input.large { font-size: 25px; }
+.field.floating { float: left; margin-right: 25px; }
+.field, .actions { padding: 0 0 10px; }
+.field label { display: block; padding: 0 0 3px; }

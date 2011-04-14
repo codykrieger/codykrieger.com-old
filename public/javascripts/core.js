@@ -89,20 +89,6 @@ $(document).ready(function() {
   });
   f.show("drop", { direction: "up" }).delay(2500).hide("drop", { direction: "down" });
   
-  // forms
-  
-  var firstInput = $("form input[type=text]:first");
-  var passInput = $("form input[type=password]:first");
-  if (firstInput.val() == "")
-    firstInput.focus();
-  else
-    passInput.focus();
-  
-  $('.autofocus').each(function(i, v) {
-    if ($(v).val() == '')
-      $(v).focus();
-  });
-  
   // obfuscation
   
   $('.obfuscated').each(function(i, v) {

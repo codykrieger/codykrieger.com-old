@@ -1,8 +1,12 @@
-%header#main_header
-  %h1= link_to 'Codykrieger.com', root_path
-= render 'shared/messages'
-%nav#main_nav
-  %ul
-    %li= link_to 'Home', root_path
-  %ul#user_nav
-    = render 'devise/menu/login_items'
+#head
+  %div
+    .left
+      %h2= link_to "cody krieger", root_path
+      .desc= @desc.downcase
+    .right.nav
+      = link_to "home", root_path, :class => "#{current_page? '/', 'active'}"
+      = link_to "apps & projects", "/projects", :class => "#{current_page? '/projects', 'active'}"
+      = link_to "about", "/about", :class => "#{current_page? '/about', 'active'}"
+      = link_to "blog", "/blog"
+      = link_to "contact", "/contact", :class => "#{current_page? '/contact', 'active'}"
+    .clear

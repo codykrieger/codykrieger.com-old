@@ -16,6 +16,7 @@
     /[if lt IE 9]
       %script{ :type => "text/javascript", :src  => "/javascripts/shiv.js" }
     = include_stylesheets :main, :media => 'all'
+    = yield(:stylesheets)
     = yield(:head)
   %body
     #container

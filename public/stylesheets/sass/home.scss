@@ -1,0 +1,14 @@
+#content {
+  background: transparent;
+  border: none;
+}
+
+.main.slider { width: 940px; height: 450px; }
+.main.slider .content { width: 940px; height: 450px; background: #fff; text-align: center; }
+
+.main.slider .content.gfxCardStatus { background: url(/images/slider-gfxCardStatus-new.png); }
+.main.slider .content.compressify { background: url(/images/slider-compressify.png); }
+.main.slider .content.gfxCardStatus .text,
+.main.slider .content.compressify .text { display: block; margin: 255px 0 0; font-size: 22px; }
+.main.slider .content.gfxCardStatus .text .smaller,
+.main.slider .content.compressify .text .smaller { font-size: 16px; color: #333; }

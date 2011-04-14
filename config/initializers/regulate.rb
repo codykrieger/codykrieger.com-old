@@ -32,5 +32,5 @@ end
 # If this returns false, the user will be redirected to the root path of the app
 
 AbstractAuth.implement :is_editor do
-  current_user.role? :editor
+  current_user.role? :admin
 end

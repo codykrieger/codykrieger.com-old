@@ -7,4 +7,6 @@ CodykriegerCom::Application.routes.draw do
   namespace "admin" do
     resources :users
   end
+  
+  match '/*slug' => 'pages#dynamic_page', :constraints => { :fullpath => /^\/(?!assets).+/ }
 end

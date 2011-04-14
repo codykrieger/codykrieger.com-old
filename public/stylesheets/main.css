@@ -172,31 +172,6 @@ h1#title, #content div h1:first-child {
   color: #999;
   text-align: center; }
 
-.flash {
-  color: #fff;
-  background: rgba(30, 30, 30, 0.85);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-  padding: 28px 24px;
-  position: fixed;
-  top: 285px;
-  left: 50%;
-  z-index: 999;
-  text-align: center;
-  display: none;
-  cursor: pointer; }
-  .flash div {
-    font-size: 34pt;
-    line-height: 1;
-    text-align: center;
-    margin: 0 0 15px 0; }
-  .flash#error, .flash#alert {
-    background: rgba(180, 0, 0, 0.85); }
-
 .pagination em {
   font-style: normal;
   font-weight: bold; }

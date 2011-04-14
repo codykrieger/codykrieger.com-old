@@ -4,7 +4,7 @@
     %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8' }
     %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1' }
     %title
-      = yield(:title)
+      = yield(:title_tag)
       cody krieger
     %meta{ :name => 'description', :content => '' }
     %meta{ :name => 'author', :content => 'Cody Krieger' }
@@ -23,6 +23,7 @@
       = render :partial => "shared/header"
       %section#content
         %div
+          = yield(:title)
           = yield
     = render :partial => "shared/footer"
     = render :partial => "shared/end_scripts"

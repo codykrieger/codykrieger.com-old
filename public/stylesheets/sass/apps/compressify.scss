@@ -1,0 +1,47 @@
+#content > div { padding: 0; }
+
+#title { display: none; }
+
+#punchline {
+  margin: 33px 0 0;
+  
+  .left {
+    float: left;
+    position: relative;
+    padding: 0 0 0 42px;
+    
+    .logo {
+      position: absolute;
+      left: 0;
+      top: 50px;
+      z-index: 99; }
+  }
+  .right {
+    float: left;
+    padding: 27px 0 0;
+    margin: 0 0 0 35px;
+    text-align: center;
+
+    h1 {
+      text-align: center; }
+  }
+  .right 
+  @media (max-device-width: 480px) {
+    #punchline .right {
+      padding: 0;
+      margin: 0 0 0 15px;
+      width: 550px;
+    }
+  }
+  
+}
+
+.price-info {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 20px;
+  
+  .price {
+    font-weight: bold;
+    color: #000; }
+}

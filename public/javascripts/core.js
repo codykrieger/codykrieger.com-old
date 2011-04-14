@@ -63,14 +63,6 @@
 
 $(document).ready(function() {
   
-  // functions
-  
-  jQuery.fn.center = function () {
-    this.css("margin-left", (this.outerWidth() / -2) + "px");
-    this.css("margin-top", (this.outerHeight() / -2) + "px");
-    return this;
-  }
-  
   // external links
   
   $("a").each(function(i, v) {

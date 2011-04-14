@@ -139,12 +139,10 @@ strong, b {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
-
-#content > div {
-  padding: 10px; }
-
-#content div {
-  line-height: 1.5; }
+  #content > div {
+    padding: 10px; }
+  #content div {
+    line-height: 1.5; }
 
 #subnav {
   background: #d6d6d6;

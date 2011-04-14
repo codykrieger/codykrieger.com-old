@@ -171,9 +171,12 @@ strong, b {
   background: #fff;
   border: 1px solid #d6d6d6;
   @include border-radius(4px);
+  
+  & > div {
+    padding: 10px; }
+  div {
+    line-height: 1.5; }
 }
-#content > div { padding: 10px; }
-#content div { line-height: 1.5; }
 
 #subnav {
   background: #d6d6d6;

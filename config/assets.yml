@@ -9,7 +9,6 @@ javascripts:
 
 stylesheets:
   main:
-    - public/stylesheets/reset.css
     - public/stylesheets/main.css
   admin:
     - public/stylesheets/reset.css

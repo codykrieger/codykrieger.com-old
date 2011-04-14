@@ -71,16 +71,6 @@ $(document).ready(function() {
     }
   });
   
-  // flash
-  
-  var f = $(".flash");
-  f.center();
-  f.live('click', function() {
-    $(this).stop(true);
-    $(this).hide("drop", { direction: "down" });
-  });
-  f.show("drop", { direction: "up" }).delay(2500).hide("drop", { direction: "down" });
-  
   // obfuscation
   
   $('.obfuscated').each(function(i, v) {

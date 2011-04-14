@@ -209,29 +209,6 @@ h1#title, #content div h1:first-child {
 
 // widgets
 
-.flash{
-  color: #fff;
-  background: rgba(30, 30, 30, 0.85);
-  @include border-radius(8px);
-  @include box-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-  padding: 28px 24px;
-  position: fixed;
-  top: 285px;
-  left: 50%;
-  z-index: 999;
-  text-align: center;
-  display: none;
-  cursor: pointer;
-  
-  div {
-    font-size: 34pt;
-    line-height: 1;
-    text-align: center;
-    margin: 0 0 15px 0; }
-  &#error, &#alert {
-    background: rgba(180, 0, 0, 0.85); }
-}
-
 .pagination em {
   font-style: normal;
   font-weight: bold;

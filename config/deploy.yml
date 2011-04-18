@@ -1,0 +1,6 @@
+production:
+  domain: "codykrieger.com"
+  deploy_to: "~/codykrieger.com"
+  repository: "git://github.com/codykrieger/codykrieger.com"
+  rake_env:
+    RAILS_ENV: 'production'

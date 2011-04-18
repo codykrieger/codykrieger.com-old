@@ -4,6 +4,10 @@ source 'http://rubygems.org'
 gem "rails", "~> 3.0.0"
 gem "sqlite3-ruby", :require => "sqlite3"
 
+# deployment
+gem "capistrano"
+gem "capistrano-ext"
+
 # auth
 gem "devise", "~> 1.1.3"
 gem "cancan"

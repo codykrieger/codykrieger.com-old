@@ -10,13 +10,18 @@ class PagesController < ApplicationController
   end
 
   def dynamic_page
-    render :template => current_page
+    begin
+      render :template => current_page
+    rescue
+      render :template => "#{current_page}/index"
+    end
   end
 
 protected
 
   def current_page
-    "pages/#{params[:slug].to_s.downcase}"
+    template_path = params[:slug].to_s.downcase
+    "pages/#{template_path}"
   end
   
 end

@@ -141,5 +141,3 @@ Devise.setup do |config|
   # end
 end
 
-Devise::SessionsController.ssl_required :new, :create
-

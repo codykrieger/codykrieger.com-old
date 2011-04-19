@@ -33,4 +33,7 @@ CodykriegerCom::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # disable ssl
+  SslRequirement.disable_ssl_check = true
 end

@@ -140,6 +140,8 @@ GEM
       rake
     polyglot (0.3.1)
     rack (1.2.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
     rack-test (0.5.7)
@@ -233,6 +235,7 @@ DEPENDENCIES
   launchy
   mocha
   pickle
+  rack-contrib
   rails (~> 3.0.0)
   rails3-generators
   rspec-rails (~> 2.0.0)

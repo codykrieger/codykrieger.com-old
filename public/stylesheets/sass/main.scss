@@ -157,11 +157,11 @@ strong, b {
 
 #content {
   background: #fff;
-  border: 1px solid #d6d6d6;
   position: relative;
-  @include border-radius(4px);
   
   & > div {
+    border: 1px solid #d6d6d6;
+    @include border-radius(4px);
     padding: 10px; }
   div {
     line-height: 1.5; }

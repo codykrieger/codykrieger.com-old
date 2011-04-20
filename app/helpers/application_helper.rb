@@ -35,7 +35,8 @@ module ApplicationHelper
     end
   end
   
-  def active_page?(path, retval)
-    return retval if request.fullpath.starts_with?(path) || request.fullpath == path
+  def active_page?(path, retval, head=false)
+    return retval if request.fullpath.starts_with?(path) && head
+    return retval if request.fullpath == path
   end
 end

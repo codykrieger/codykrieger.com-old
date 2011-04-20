@@ -124,12 +124,12 @@ strong, b {
 
 #content {
   background: #fff;
-  border: 1px solid #d6d6d6;
-  position: relative;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
+  position: relative; }
   #content > div {
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     padding: 10px; }
   #content div {
     line-height: 1.5; }

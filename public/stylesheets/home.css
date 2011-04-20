@@ -1,4 +1,4 @@
-#content {
+#content, #content > div {
   background: transparent;
   border: none; }
 

@@ -23,14 +23,26 @@ class PagesController < ApplicationController
   end
 
   def subnav
-    subnav = render :partial => "#{current_page}/menu", :layout => "menu_template"
+    # magic method to render a given folder's subnav partial
+    begin
+      subnav = render :partial => "#{current_page}/menu", :layout => "menu_template"
+      subnav.first unless subnav.nil?
+    rescue
+      begin
+        subnav = render :partial => "#{page_root}/menu", :layout => "menu_template"
+      rescue
+      end
+    end
     subnav.first unless subnav.nil?
-  rescue
   end
 
 protected
 
   def current_page
     "pages/#{params[:slug].to_s.downcase}"
+  end
+
+  def page_root
+    "pages/#{params[:slug].to_s.downcase.gsub /^([^\/]+)(\/.+)+$/, '\1'}"
   end
 end

@@ -1,9 +1,10 @@
 CodykriegerCom::Application.routes.draw do
-  match 'admin' => 'admin/dashboard#index'
-  
-  devise_for :users
-  namespace "admin" do
-    resources :users
+  scope :constraints => { :protocol => (Rails.env.production? ? "https" : "http") } do
+    match 'admin' => 'admin/dashboard#index'
+    devise_for :users
+    namespace "admin" do
+      resources :users
+    end
   end
   
   match '/gfxCardStatus/*file.zip' => redirect("/downloads/%{file}.zip")

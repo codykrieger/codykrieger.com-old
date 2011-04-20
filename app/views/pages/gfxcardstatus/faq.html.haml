@@ -94,10 +94,10 @@
   GPUs while they're running (virtualization software, especially). It's mainly 
   a problem of timing the switch correctly, before the application opens. The way 
   that the graphics switching capabilities currently work, it is nearly impossible 
-  to catch an application while it is starting up and switch GPUs, unless said 
-  application has an extremely long startup time (I'm looking at you, Photoshop). 
-  Until a better solution can be devised, I don't feel comfortable adding this 
-  functionality to gfxCardStatus.
+  to catch an application while it is starting up and switch GPUs before it's finished, 
+  unless said application has an extremely long startup time (I'm looking at you, 
+  Photoshop). Until a better solution can be devised, I don't feel comfortable 
+  adding this functionality to gfxCardStatus.
 
   <h2 id="growl">How do I get these awesome Growl notifications?</h2>
   Chances are you probably already have Growl installed - lots of applications 

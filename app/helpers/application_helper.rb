@@ -35,9 +35,7 @@ module ApplicationHelper
     end
   end
   
-  def current_page?(path, retval, subnav=false)
-    return retval if request.fullpath.starts_with?(path) && path != '/' && path != '/admin' && !subnav
-    return retval if request.fullpath == path
+  def active_page?(path, retval)
+    return retval if request.fullpath.starts_with?(path) || request.fullpath == path
   end
-  
 end

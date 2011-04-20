@@ -22,10 +22,15 @@ class PagesController < ApplicationController
     end
   end
 
+  def subnav
+    subnav = render :partial => "#{current_page}/menu", :layout => "menu_template"
+    subnav.first unless subnav.nil?
+  rescue
+  end
+
 protected
 
   def current_page
     "pages/#{params[:slug].to_s.downcase}"
   end
-  
 end

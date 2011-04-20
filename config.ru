@@ -8,7 +8,9 @@ use Rack::Static, :urls => [
   "/images",
   "/stylesheets",
   "/javascripts",
-  "/favicon.ico"
+  "/favicon.ico",
+  "/gfxCardStatus/releasenotes",
+  "/gfxCardStatus/appcast.xml"
 ], :root => "public"
 
 run CodykriegerCom::Application

@@ -11,10 +11,10 @@ module ApplicationHelper
     end
   end
   
-  def metadesc(text)
-    unless text.to_s.empty?
+  def metadesc(text=nil, &block)
+    unless text.to_s.empty? and block.nil?
       content_for :meta_desc do
-        text
+        block ? with_output_buffer(&block) : text
       end
     end
   end

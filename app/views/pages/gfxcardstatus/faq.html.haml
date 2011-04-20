@@ -1,0 +1,109 @@
+- title "faq", "faq - gfxCardStatus"
+
+:markdown
+  Questions:
+
+  - [What do the **_i_** and the **_d_** icons mean?](#icons)
+  - [Is my MacBook Pro supported?](#supported)
+  - [What languages is gfxCardStatus localized in?](#languages)
+  - [Why doesn't my external display work?](#ext_display)
+  - [Why can't I switch GPUs while in clamshell mode?](#clamshell)
+  - [Why doesn't application x work after I switch GPUs?](#applications)
+  - [Can you add an "ignore list" feature?](#blacklist)
+  - [How do I get these awesome Growl notifications?](#growl)
+  - [Where can I get help?](#help)
+
+  <h2 id="icons">What do the <strong><em>i</em></strong> and the 
+  <strong><em>d</em></strong> icons mean?</h2>
+  The **_i_** and **_d_** graphics denote whether your MacBook Pro is using its 
+  integrated or discrete GPU. They do not indicate what mode gfxCardStatus is 
+  set to.
+
+  If you have used gfxCardStatus for a while, you may be more familiar with the 
+  **_n_** graphic than the **_d_**. If you would like to change the icon back, 
+  please read my blog post about it here: 
+  [http://blog.codykrieger.com/2011/03/03/changing-gfxcardstatus-icons.html](http://blog.codykrieger.com/2011/03/03/changing-gfxcardstatus-icons.html)
+
+  <h2 id="supported">Is my MacBook Pro supported?</h2>
+  You've come to the right place to find out! You must have a dual-GPU MacBook 
+  Pro in order to take advantage of gfxCardStatus. If you have any of these 
+  models:
+
+  - 2011 i5/i7 MacBook Pro with Intel HD 3000/AMD Radeon HD 6xxxM GPUs
+  - 2010 i5/i7 MacBook Pro with Intel HD/NVIDIA GeForce GT 330M GPUs
+  - 2009 MacBook Pro with NVIDIA GeForce 9400M/9600M GT GPUs
+  - Late 2008 MacBook Pro with NVIDIA GeForce 9400M/9600M GT GPUs
+
+  You're covered!
+
+  <h2 id="languages">What languages is gfxCardStatus localized in?</h2>
+  Want to help localize gfxCardStatus in a language not listed here? Please 
+  shoot me an email. 
+  <span data-value="cody----codykrieger____com" class="obfuscated">cody{at}codykrieger{dot}com</span> :)
+
+  - English
+  - French
+  - German
+  - Italian
+  - Simplified Chinese
+  - Traditional Chinese
+  - Spanish
+  - Danish
+  - Swedish
+  - Portugese
+  - Dutch
+
+  <h2 id="ext_display">Why doesn't my external display work?</h2>
+  Don't worry - nothing is broken. If your external display is not being 
+  detected while you're using gfxCardStatus, it means that you have a newer 
+  i5/i7 model, and you're currently on Intel Only mode. Switch to Discrete Only 
+  or Dynamic Switching to use the display. The Intel graphics chipset is 
+  incapable of outputting video through the Mini DisplayPort.
+
+  <h2 id="clamshell">Why can't I switch GPUs while in clamshell mode?</h2>
+  This is expected behavior on 9400M/9600M GT models. Switching while in 
+  clamshell mode is currently not supported.
+
+  <h2 id="applications">Why doesn't application x work after I switch GPUs?</h2>
+  Some applications get particularly feisty when it comes to switching GPUs 
+  while they are open (on newer i5/i7 machines). It is for this reason that I 
+  recommend switching GPUs _**before**_ running an application that would 
+  otherwise force a switch to the discrete GPU, rather than switching during 
+  runtime. There can occasionally be rendering issues if you switch while an 
+  application is open, but it is _**100% temporary**_. Just restart the 
+  application and it will render properly again. Here is a list of some of 
+  said applications:
+
+  - Sparrow (inbox, effects render improperly)
+  - Virtualization software (Parallels, VMware, VirtualBox, etc.)
+  - Flash plugins (Chrome, Safari, etc.)
+  - CoverSutra
+  - Twitter for Mac (timeline renders improperly, other things are hit or miss)
+  - Tweetie (sidebar renders improperly)
+  - Photoshop (selection lines fail to render, other oddities)
+  - iPhoto
+  - HyperDock
+  - Choosy
+  - Hyperspaces
+
+  <h2 id="blacklist">Can you add an "ignore list" feature?</h2>
+  **Short answer**: no, it's not possible.
+
+  **Long answer**: There are currently a lot of problems with an 
+  approach like this. Some applications don't particularly like when you switch 
+  GPUs while they're running (virtualization software, especially). It's mainly 
+  a problem of timing the switch correctly, before the application opens. The way 
+  that the graphics switching capabilities currently work, it is nearly impossible 
+  to catch an application while it is starting up and switch GPUs, unless said 
+  application has an extremely long startup time (I'm looking at you, Photoshop). 
+  Until a better solution can be devised, I don't feel comfortable adding this 
+  functionality to gfxCardStatus.
+
+  <h2 id="growl">How do I get these awesome Growl notifications?</h2>
+  Chances are you probably already have Growl installed - lots of applications 
+  use it. If not, you'll need to [install it](http://growl.info/)!
+
+  <h2 id="help">Where can I get help?</h2>
+  Please shoot me an email! I'd be happy to oblige. 
+  <span data-value="cody----codykrieger____com" class="obfuscated">cody{at}codykrieger{dot}com</span>
+    

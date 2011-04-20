@@ -176,13 +176,16 @@ strong, b {
   border: 1px solid #d6d6d6;
   @include border-radius(4px);
   color: #888;
-}
-#subnav a {
-  display: inline-block;
-  margin: 0 0 0 14px;
-}
-#subnav a.active {
-  color: #666;
+
+  a {
+    display: inline-block;
+    margin: 0 0 0 14px;
+
+    &:first-child {
+      margin: 0 0 0 4px; }
+    &.active {
+      color: #666; }
+  }
 }
 
 h1#title, #content div h1:first-child {
@@ -230,6 +233,18 @@ div.lightbox {
     font-size: 15pt; }
   p {
     font-size: 10pt; }
+}
+
+.bordered {
+  display: inline-block;
+  padding: 5px;
+  background: #eee;
+  border: 1px solid #bbb;
+  @include border-radius(4px);
+
+  img {
+    display: block;
+    padding-bottom: 5px; }
 }
 
 // classes

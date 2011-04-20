@@ -1,89 +1,40 @@
-/*
-Syntax error: Invalid CSS after "  .right": expected "{", was "@media (max-dev..."
-        on line 29 of /Users/codykrieger/projects/codykrieger.com/public/stylesheets/sass/apps/compressify.scss
+#content > div {
+  padding: 0; }
 
-24: 
-25:     h1 {
-26:       text-align: center; }
-27:   }
-28:   .right 
-29:   @media (max-device-width: 480px) {
-30:     #punchline .right {
-31:       padding: 0;
-32:       margin: 0 0 0 15px;
-33:       width: 550px;
-34:     }
+#title {
+  display: none; }
 
-Backtrace:
-/Users/codykrieger/projects/codykrieger.com/public/stylesheets/sass/apps/compressify.scss:29
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:809:in `tok!'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:338:in `block'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:333:in `ruleset'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:401:in `declaration_or_ruleset'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:357:in `block_child'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:350:in `block_contents'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:339:in `block'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:333:in `ruleset'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:356:in `block_child'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:350:in `block_contents'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:57:in `stylesheet'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/scss/parser.rb:26:in `parse'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/engine.rb:213:in `_to_tree'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/engine.rb:179:in `block in to_tree'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/haml/util.rb:294:in `silence_haml_warnings'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/engine.rb:179:in `to_tree'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/files.rb:44:in `tree_for'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `block (2 levels) in update_stylesheets'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `block in update_stylesheets'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/warden-1.0.3/lib/warden/manager.rb:35:in `block in call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/head.rb:14:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@global/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/flash.rb:182:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/cookies.rb:302:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:32:in `block in call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:12:in `cache'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:31:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@global/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/railties-3.0.6/lib/rails/rack/logger.rb:13:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@global/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/activesupport-3.0.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@global/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
-<internal:prelude>:10:in `synchronize'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@global/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/actionpack-3.0.6/lib/action_dispatch/middleware/static.rb:30:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/railties-3.0.6/lib/rails/application.rb:168:in `call'
-/Users/codykrieger/.rvm/gems/ruby-1.9.2-p180@codykrieger.com/gems/railties-3.0.6/lib/rails/application.rb:77:in `method_missing'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:146:in `handle'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:86:in `each'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:86:in `block in start'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:66:in `loop'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:66:in `start'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:13:in `run'
-/Users/codykrieger/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/bin/nack_worker:4:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  .right\": expected \"{\", was \"@media (max-dev...\"\A         on line 29 of /Users/codykrieger/projects/codykrieger.com/public/stylesheets/sass/apps/compressify.scss\A \A 24: \A 25:     h1 {\A 26:       text-align: center; }\A 27:   }\A 28:   .right \A 29:   @media (max-device-width: 480px) {\A 30:     #punchline .right {\A 31:       padding: 0;\A 32:       margin: 0 0 0 15px;\A 33:       width: 550px;\A 34:     }"; }
+#punchline {
+  margin: 33px 0 0; }
+  #punchline .left {
+    float: left;
+    position: relative;
+    padding: 0 0 0 42px; }
+    #punchline .left .logo {
+      position: absolute;
+      left: 0;
+      top: 50px;
+      z-index: 99; }
+  #punchline .right {
+    float: left;
+    padding: 27px 0 0;
+    margin: 0 0 0 35px;
+    text-align: center; }
+    #punchline .right h1 {
+      text-align: center;
+      font-size: 27pt !important; }
+  #punchline .right {
+    @media (max-device-width: 480px) {
+      #punchline .right {
+        padding: 0;
+        margin: 0 0 0 15px;
+        width: 550px; } }
+ }
+
+.price-info {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 20px; }
+  .price-info .price {
+    font-weight: bold;
+    color: #000; }

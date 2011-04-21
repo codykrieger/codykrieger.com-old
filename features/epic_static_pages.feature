@@ -8,7 +8,6 @@ Feature: Epic static pages
 
   Scenario: View existing pages
     When I request the following pages:
-      | URL                | Page                |
       | /                  | home                |
       | /projects          | apps & projects     |
       | /about             | about               |
@@ -19,7 +18,6 @@ Feature: Epic static pages
 
   Scenario: View redirected pages
     When I request the following pages:
-      | URL                       | New URL                              |
       | /getintouch               | /contact                             |
       | /work                     | /about/work                          |
       | /blog                     | http://blog.codykrieger.com          |
@@ -28,7 +26,6 @@ Feature: Epic static pages
 
   Scenario: Uber important pages
     When I request the following pages:
-      | URL                         | Page                        |
       | /gfxCardStatus              | gfxCardStatus               |
       | /gfxCardStatus/faq          | faq - gfxCardStatus         |
       | /gfxCardStatus/changelog    | changelog - gfxCardStatus   |

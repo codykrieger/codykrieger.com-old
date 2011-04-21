@@ -9,9 +9,32 @@ Feature: Epic static pages
   Scenario: View existing pages
     When I request the following pages:
       | URL                | Page                |
-      | /
-      | /projects
-      | /about
-      | /about/work
-      | /about/press
-      | /contact
+      | /                  | home                |
+      | /projects          | apps & projects     |
+      | /about             | about               |
+      | /about/work        | work - about        |
+      | /about/press       | press - about       |
+      | /contact           | contact             |
+    Then I should receive a successful response
+
+  Scenario: View redirected pages
+    When I request the following pages:
+      | URL                       | New URL                              |
+      | /getintouch               | /contact                             |
+      | /work                     | /about/work                          |
+      | /blog                     | http://blog.codykrieger.com          |
+      | /blog/somepage            | http://blog.codykrieger.com/somepage |
+    Then I should be redirected to the new URLs
+
+  Scenario: Uber important pages
+    When I request the following pages:
+      | URL                         | Page                        |
+      | /gfxCardStatus              | gfxCardStatus               |
+      | /gfxCardStatus/faq          | faq - gfxCardStatus         |
+      | /gfxCardStatus/changelog    | changelog - gfxCardStatus   |
+      | /gfxCardStatus/features     | features - gfxCardStatus    |
+      | /gfxCardStatus/screenshots  | screenshots - gfxCardStatus |
+      | /compressify                | Compressify                 |
+      | /compressify/support        | support - Compressify       |
+    Then I should receive a successful response
+

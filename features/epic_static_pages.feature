@@ -8,7 +8,7 @@ Feature: Epic static pages
 
   Scenario: View existing pages
     When I request the following pages:
-      | /                  | home                |
+      | /                  | cody krieger        |
       | /projects          | apps & projects     |
       | /about             | about               |
       | /about/work        | work - about        |
@@ -17,7 +17,7 @@ Feature: Epic static pages
     Then I should receive a successful response
 
   Scenario: View redirected pages
-    When I request the following pages:
+    When I request the following URLs:
       | /getintouch               | /contact                             |
       | /work                     | /about/work                          |
       | /blog                     | http://blog.codykrieger.com          |

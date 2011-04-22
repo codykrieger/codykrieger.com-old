@@ -1,5 +1,4 @@
 module ApplicationHelper
-  
   # head and meta
   
   def title(t1, *args)

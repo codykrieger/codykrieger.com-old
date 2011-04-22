@@ -1,6 +1,6 @@
 = include_javascripts :common
 = yield(:end_scripts)
-- if Rails.env == 'production'
+- if Rails.env.production?
   :javascript
     (function() {
       var ma = document.createElement('script'); ma.type = 'text/javascript';

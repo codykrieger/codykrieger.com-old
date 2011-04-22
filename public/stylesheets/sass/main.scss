@@ -168,13 +168,13 @@ strong, b {
 }
 
 #subnav {
-  background: #d6d6d6;
+  background: #ddd;
   position: absolute;
   top: -15px;
   right: 0;
   padding: 4px 8px;
   @include border-radius(4px);
-  @include box-shadow(inset 0px 0px 4px #888);
+  @include box-shadow(inset 0px 0px 3px #888);
   color: #888;
 
   a {

@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   rescue_from ActionView::MissingTemplate do |exception|
     if exception.message =~ %r{Missing template pages/}
       # raise ActionController::RoutingError, "No such page: #{params[:slug]}"
-      logger.debug exception.message
       # render the 404 page if we still haven't found what we're looking for
       render '/public/404.html', :layout => nil, :status => 404
     else

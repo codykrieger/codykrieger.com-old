@@ -58,7 +58,14 @@ nginx.conf:
         gzip_vary on;
     
         # other server blocks, etc.
-    
+        
+        # for unicorns
+        # upstream unicorns {
+        #    server unix:/home/[user]/codykrieger.com/tmp/sockets/unicorn.sock;
+        #    # If you're not using unicorn with UNIX domain sockets, you'd do something like this:
+        #    # server 127.0.0.01:8080;
+        # }
+        
         server {
             listen [::]:80;
         
@@ -66,10 +73,26 @@ nginx.conf:
             root /home/[user]/codykrieger.com/public;
             include passenger.standard.conf;
 
-            location /storage {
-                root /home/[user]/codykrieger.com;
+            location ~ /downloads/(.*) {
+                root /home/[user]/codykrieger.com_downloads;
                 internal;
             }
+            
+            # something like this if we're using unicorns
+            # 
+            # location / {
+            #     proxy_redirect    off;
+            #     
+            #     proxy_set_header  Host              $http_host;
+            #     proxy_set_header  X-Real-IP         $remote_addr;
+            #     proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+            # 
+            #     proxy_set_header  X-Sendfile-Type   X-Accel-Redirect;
+            #     proxy_set_header  X-Accel-Mapping   /downloads/=/home/[user]/codykrieger.com_downloads/;
+            #     
+            #     proxy_pass http://unicorns;
+            # }
+                    
         }
         
         # other server blocks, etc.

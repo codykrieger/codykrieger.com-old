@@ -8,9 +8,7 @@ class DownloadsController < ApplicationController
     download.count += 1
     download.save
 
-    response.headers['X-Accel-Redirect'] = "/storage/#{path}"
-    response.headers['Content-Type'] = 'application/octet-stream'
-    response.headers['Content-Disposition'] = "attachment; filename=#{file}"
+    send_file "#{Rails.root}/downloads/#{file}"
 
     render :nothing => true
   end

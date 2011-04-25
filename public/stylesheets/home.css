@@ -1,6 +1,9 @@
 #content, #content > div {
   background: transparent;
-  border: none; }
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 .main.slider {
   width: 940px;

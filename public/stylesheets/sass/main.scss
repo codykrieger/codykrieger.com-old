@@ -5,29 +5,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, cod
 table { border-collapse: collapse; border-spacing: 0; }
 ol, ul { list-style: none; }
 
-// variables
-
-$font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;
-$heading-font-family: Helvetica, Arial, sans-serif;
-$text-color: #666;
-$heading-color: #000;
-$link-color: #08c;
-
-$vspace: 20px;
-
-// mixins
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
-}
-
-@mixin box-shadow($vars) {
-  -webkit-box-shadow: $vars;
-  -moz-box-shadow: $vars;
-  box-shadow: $vars;
-}
+@import "includes";
 
 // global
 
@@ -160,26 +138,26 @@ strong, b {
   position: relative;
   
   & > div {
-    border: 1px solid #d6d6d6;
+    border: 1px solid #bbb;
     @include border-radius(4px);
+    @include box-shadow(0px 0px 4px #bbb);
     padding: 10px; }
   div {
     line-height: 1.5; }
 }
 
 #subnav {
-  background: #ddd;
   position: absolute;
-  top: -15px;
+  top: -36px;
   right: 0;
-  padding: 4px 8px;
+  padding: 3px 8px;
   @include border-radius(4px);
-  @include box-shadow(inset 0px 0px 3px #888);
   color: #888;
 
   a {
     display: inline-block;
-    margin: 0 0 0 14px;
+    margin: 0 0 0 10px;
+    font-size: 13px;
 
     &:first-child {
       margin: 0 0 0 4px; }

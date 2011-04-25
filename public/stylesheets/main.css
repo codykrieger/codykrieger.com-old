@@ -126,30 +126,30 @@ strong, b {
   background: #fff;
   position: relative; }
   #content > div {
-    border: 1px solid #d6d6d6;
+    border: 1px solid #bbb;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 4px #bbbbbb;
+    -moz-box-shadow: 0px 0px 4px #bbbbbb;
+    box-shadow: 0px 0px 4px #bbbbbb;
     padding: 10px; }
   #content div {
     line-height: 1.5; }
 
 #subnav {
-  background: #ddd;
   position: absolute;
-  top: -15px;
+  top: -36px;
   right: 0;
-  padding: 4px 8px;
+  padding: 3px 8px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0px 0px 3px #888888;
-  -moz-box-shadow: inset 0px 0px 3px #888888;
-  box-shadow: inset 0px 0px 3px #888888;
   color: #888; }
   #subnav a {
     display: inline-block;
-    margin: 0 0 0 14px; }
+    margin: 0 0 0 10px;
+    font-size: 13px; }
     #subnav a:first-child {
       margin: 0 0 0 4px; }
     #subnav a.active {

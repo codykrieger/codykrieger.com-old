@@ -1,6 +1,9 @@
+@import "includes";
+
 #content, #content > div {
   background: transparent;
   border: none;
+  @include box-shadow(none);
 }
 
 .main.slider { width: 940px; height: 450px; }

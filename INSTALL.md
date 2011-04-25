@@ -74,7 +74,7 @@ nginx.conf:
             include passenger.standard.conf;
 
             location ~ /downloads/(.*) {
-                root /home/[user]/codykrieger.com_downloads;
+                root /home/[user]/codykrieger.com/downloads;
                 internal;
             }
             
@@ -88,7 +88,7 @@ nginx.conf:
             #     proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
             # 
             #     proxy_set_header  X-Sendfile-Type   X-Accel-Redirect;
-            #     proxy_set_header  X-Accel-Mapping   /downloads/=/home/[user]/codykrieger.com_downloads/;
+            #     proxy_set_header  X-Accel-Mapping   /downloads/=/home/[user]/codykrieger.com/downloads/;
             #     
             #     proxy_pass http://unicorns;
             # }

@@ -9,3 +9,5 @@ public/system/**/**/**/*
 .sass-cache/**/*
 *.swp
 tmp/restart.txt
+downloads
+storage

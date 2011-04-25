@@ -9,8 +9,6 @@ class DownloadsController < ApplicationController
     download.save
 
     send_file "#{Rails.root}/downloads/#{file}"
-
-    render :nothing => true
   end
 
 end

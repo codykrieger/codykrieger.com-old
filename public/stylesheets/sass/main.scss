@@ -138,7 +138,7 @@ strong, b {
   position: relative;
   
   & > div {
-    border: 1px solid #bbb;
+    border: 1px solid #ccc;
     @include border-radius(4px);
     @include box-shadow(0px 0px 4px #bbb);
     padding: 10px; }

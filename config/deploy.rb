@@ -16,6 +16,7 @@ role :db,  "codykrieger.com", :primary => true # This is where Rails migrations 
 
 task :after_update_code do
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml"
+  run "ln -nfs #{deploy_to}/#{shared_dir}/downloads #{release_path}/downloads"
 end
 
 # If you are using Passenger mod_rails uncomment this:

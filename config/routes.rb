@@ -18,6 +18,4 @@ CodykriegerCom::Application.routes.draw do
   match '/blog/*path' => redirect("http://blog.codykrieger.com/%{path}")
   
   root :to => 'home#index'
-  
-  match '/*slug' => 'pages#dynamic_page', :constraints => { :fullpath => /^\/(?!assets).+/ }
 end

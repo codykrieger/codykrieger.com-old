@@ -14,6 +14,7 @@ gem "devise", "~> 1.1.3"
 gem "cancan"
 
 # content
+gem "blue_sparks"
 gem "jammit"
 gem "redcarpet"
 gem "friendly_id", "~> 3.1"

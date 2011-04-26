@@ -15,7 +15,7 @@ role :app, "codykrieger.com"                          # This may be the same as 
 role :db,  "codykrieger.com", :primary => true # This is where Rails migrations will run
 
 task :after_update_code do
-  run “ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml”
+  run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml"
 end
 
 # If you are using Passenger mod_rails uncomment this:

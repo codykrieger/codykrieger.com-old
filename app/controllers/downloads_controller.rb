@@ -8,7 +8,7 @@ class DownloadsController < ApplicationController
     download.count += 1
     download.save
 
-    send_file "#{Rails.root}/downloads/#{file}"
+    send_file "#{Rails.root}/files/#{file}"
   end
 
 end

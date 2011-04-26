@@ -15,7 +15,7 @@ This assumes:
     gem install bundler && bundle install
     
     # for downloads
-    mkdir storage
+    mkdir files
 
 ## Nginx Configuration
 
@@ -70,11 +70,11 @@ nginx.conf:
             listen [::]:80;
         
             server_name www.codykrieger.com codykrieger.com;
-            root /home/[user]/codykrieger.com/public;
+            root /home/[user]/codykrieger.com/current/public; # 'current' since we're using capistrano
             include passenger.standard.conf;
 
             location ~ /downloads/(.*) {
-                root /home/[user]/codykrieger.com/downloads;
+                root /home/[user]/codykrieger.com/current/files;
                 internal;
             }
             
@@ -88,7 +88,7 @@ nginx.conf:
             #     proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
             # 
             #     proxy_set_header  X-Sendfile-Type   X-Accel-Redirect;
-            #     proxy_set_header  X-Accel-Mapping   /downloads/=/home/[user]/codykrieger.com/downloads/;
+            #     proxy_set_header  X-Accel-Mapping   /downloads/=/home/[user]/codykrieger.com/current/downloads/;
             #     
             #     proxy_pass http://unicorns;
             # }

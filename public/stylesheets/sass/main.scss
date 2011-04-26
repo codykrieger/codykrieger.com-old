@@ -151,9 +151,10 @@ strong, b {
   position: absolute;
   top: -15px;
   right: 0;
-  padding: 4px 8px;
+  padding: 3px 8px;
+  border: 1px solid #ababab;
   @include border-radius(4px);
-  @include box-shadow(inset 0px 0px 4px #bbb);
+  @include box-shadow(inset 0px 0px 2px #aaa);
   color: #888;
 
   a {

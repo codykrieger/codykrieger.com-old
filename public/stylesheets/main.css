@@ -142,13 +142,14 @@ strong, b {
   position: absolute;
   top: -15px;
   right: 0;
-  padding: 4px 8px;
+  padding: 3px 8px;
+  border: 1px solid #ababab;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0px 0px 4px #bbbbbb;
-  -moz-box-shadow: inset 0px 0px 4px #bbbbbb;
-  box-shadow: inset 0px 0px 4px #bbbbbb;
+  -webkit-box-shadow: inset 0px 0px 2px #aaaaaa;
+  -moz-box-shadow: inset 0px 0px 2px #aaaaaa;
+  box-shadow: inset 0px 0px 2px #aaaaaa;
   color: #888; }
   #subnav a {
     display: inline-block;

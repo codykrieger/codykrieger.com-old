@@ -6,7 +6,7 @@ DIR=`pwd`
 cd ..
 cd $DIR
 
-bundle install --deployment
+bundle install
 rake deploy:create_rails_dirs
 rake deploy:symlinkage
 

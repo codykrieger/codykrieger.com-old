@@ -6,7 +6,7 @@ DIR=`pwd`
 cd ..
 cd $DIR
 
-bundle install --deployment
+bundle install
 rake deploy:run_migrations
 rake deploy:restart_app
 

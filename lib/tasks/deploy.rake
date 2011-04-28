@@ -5,7 +5,7 @@ namespace :deploy do
   task :create_rails_dirs do
     if role? :www
       puts "Creating log/ and tmp/ directories..."
-      Dir.chdir(Rails.root)
+      Dir.chdir Rails.root
       system "mkdir -p log tmp"
     end
   end

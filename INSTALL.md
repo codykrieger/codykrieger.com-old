@@ -56,28 +56,28 @@ nginx.conf:
         gzip_min_length 640;
         gzip_types text/plain text/css application/x-javascript text/xml application/xml application/xml+rss text/javascript;
         gzip_vary on;
-    
+
         # other server blocks, etc.
-        
+
         # for unicorns
         # upstream unicorns {
         #    server unix:/home/[user]/codykrieger.com/tmp/sockets/unicorn.sock;
         #    # If you're not using unicorn with UNIX domain sockets, you'd do something like this:
         #    # server 127.0.0.01:8080;
         # }
-        
+
         server {
             listen [::]:80;
-        
+
             server_name www.codykrieger.com codykrieger.com;
-            root /home/[user]/codykrieger.com/current/public; # 'current' since we're using capistrano
+            root /home/[user]/codykrieger.com/public; # 'current' since we're using capistrano
             include passenger.standard.conf;
 
-            location ~ /downloads/(.*) {
-                root /home/[user]/codykrieger.com/current/files;
+            location ~ /files/(.*) {
+                root /home/[user]/codykrieger.com;
                 internal;
             }
-            
+
             # something like this if we're using unicorns
             # 
             # location / {
@@ -88,13 +88,13 @@ nginx.conf:
             #     proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
             # 
             #     proxy_set_header  X-Sendfile-Type   X-Accel-Redirect;
-            #     proxy_set_header  X-Accel-Mapping   /downloads/=/home/[user]/codykrieger.com/current/downloads/;
+            #     proxy_set_header  X-Accel-Mapping   /files/=/home/[user]/codykrieger.com/files/;
             #     
             #     proxy_pass http://unicorns;
             # }
-                    
+
         }
-        
+
         # other server blocks, etc.
 
     }

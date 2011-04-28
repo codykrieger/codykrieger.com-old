@@ -117,5 +117,17 @@ $(document).ready(function() {
     $(e).lightbox_me({centered: true});
     return false;
   });
+
+  // flattr
+  
+  if ($('a.FlattrButton')) {
+    (function() {
+      var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+      t.parentNode.insertBefore(s, t);
+    })();
+  }
   
 });

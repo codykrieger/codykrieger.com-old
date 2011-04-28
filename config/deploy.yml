@@ -8,6 +8,8 @@ production:
   deploy_to: "~/codykrieger.com"
   repository: "git://github.com/codykrieger/codykrieger.com.git"
   branch: "master"
+  post_setup_script: ".rvmrc"
+  post_deploy_script: ".rvmrc"
   rake_env:
     RAILS_ENV: 'production'
 

@@ -17,6 +17,13 @@ namespace :deploy do
     end
   end
 
+  task :bundle do
+    if changed?('Gemfile') or changed?('Gemfile.lock')
+      Dir.chdir Rails.root
+      system "bundle"
+    end
+  end
+
   task :symlinkage do
     puts "Symlinking config/database.yml..."
     system "ln -nfs ~/codykrieger.com.database.yml #{File.join Rails.root, 'config', 'database.yml'}"
@@ -29,6 +36,6 @@ namespace :deploy do
     system "touch #{File.join Rails.root, 'tmp', 'restart.txt'}"
   end
 
-  task :post_setup => [:create_rails_dirs, :symlinkage]
-  task :post_deploy => [:run_migrations, :restart_app]
+  task :post_setup => [:create_rails_dirs, :symlinkage, :bundle]
+  task :post_deploy => [:run_migrations, :restart_app, :bundle]
 end

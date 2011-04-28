@@ -1,4 +1,8 @@
-#!/usr/bin/zsh
+#!/bin/bash
 
-echo $PATH
+# rvm magic
+source "/usr/local/lib/rvm"
+DIR=`pwd`
+cd ..
+cd $DIR
 

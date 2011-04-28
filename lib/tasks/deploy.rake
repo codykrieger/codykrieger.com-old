@@ -36,6 +36,6 @@ namespace :deploy do
     system "touch #{File.join Rails.root, 'tmp', 'restart.txt'}"
   end
 
-  task :post_setup => [:create_rails_dirs, :symlinkage, :bundle]
-  task :post_deploy => [:run_migrations, :restart_app, :bundle]
+  # task :post_setup => [:create_rails_dirs, :symlinkage, :bundle]
+  # task :post_deploy => [:run_migrations, :restart_app, :bundle]
 end

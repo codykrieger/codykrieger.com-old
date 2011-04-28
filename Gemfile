@@ -7,8 +7,6 @@ gem "mysql"
 gem "rack-contrib"
 
 # deployment
-gem "capistrano"
-gem "capistrano-ext"
 gem "whiskey_disk"
 
 # auth

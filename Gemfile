@@ -9,6 +9,7 @@ gem "rack-contrib"
 # deployment
 gem "capistrano"
 gem "capistrano-ext"
+gem "whiskey_disk"
 
 # auth
 gem "devise", "~> 1.1.3"

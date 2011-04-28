@@ -1,0 +1,13 @@
+production:
+  domain:
+  - name: "codykrieger.com"
+    roles:
+    - "web"
+    - "app"
+    - "db"
+  deploy_to: "~/codykrieger.com"
+  repository: "git://github.com/codykrieger/codykrieger.com.git"
+  branch: "master"
+  rake_env:
+    RAILS_ENV: 'production'
+

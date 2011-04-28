@@ -15,7 +15,7 @@ gem "devise", "~> 1.1.3"
 gem "cancan"
 
 # content
-gem "blue_sparks"
+gem "blue_sparks", :git => "git://github.com/codykrieger/blue_sparks.git"
 gem "jammit"
 gem "redcarpet"
 gem "friendly_id", "~> 3.1"

@@ -26,7 +26,7 @@ namespace :deploy do
   end
 
   task :restart_app do
-    system "touch #{File.join current_path, 'tmp', 'restart.txt'}"
+    system "touch #{File.join Rails.root, 'tmp', 'restart.txt'}"
   end
 
   task :post_setup => [:create_rails_dirs, :symlinkage]

@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# common
-./deploy_magic.sh
+# rvm magic
+source "/usr/local/lib/rvm"
+DIR=`pwd`
+cd ..
+cd $DIR
 
 rake deploy:create_rails_dirs
 rake deploy:bundle

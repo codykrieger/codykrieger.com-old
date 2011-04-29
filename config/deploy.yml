@@ -8,8 +8,8 @@ production:
   deploy_to: "~/codykrieger.com"
   repository: "git://github.com/codykrieger/codykrieger.com.git"
   branch: "master"
-  post_setup_script: "deploy_setup_magic.sh"
-  post_deploy_script: "deploy_deploy_magic.sh"
+  # post_setup_script: "deploy_setup_magic.sh"
+  # post_deploy_script: "deploy_deploy_magic.sh"
   rake_env:
     RAILS_ENV: 'production'
 

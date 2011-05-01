@@ -54,7 +54,7 @@
         return o;
       }
     }
-  }
+  };
 
   window.Ql = Ql;
   $(document).ready(Ql.init);
@@ -81,17 +81,19 @@ $(document).ready(function() {
   // collapsibles and lists
   
   $(".expand").click(function() {
-    if ($(this).html() == "+")
+    if ($(this).html() == "+") {
       $(this).html("-");
-    else
+    } else {
       $(this).html("+");
+    }
     
     var next = $(this).parent().parent().next("ul");
     if (next.length > 0) {
-      if (next.filter("ul:visible").length > 0)
+      if (next.filter("ul:visible").length > 0) {
         next.hide("blind", "fast");
-      else
+      } else {
         next.show("blind", "fast");
+      }
     }
     
     return false;
@@ -102,11 +104,11 @@ $(document).ready(function() {
   $(window).load(function() {
     $('.slider').each(function(i, v) {
       $(v).orbit({
-    		'bullets': true,
-    		'timer' : true,
-    		'advanceSpeed' : 7000,
-    		'animation' : 'horizontal-slide'
-    	});
+        'bullets': true,
+        'timer' : true,
+        'advanceSpeed' : 7000,
+        'animation' : 'horizontal-slide'
+      });
     });
   });
   

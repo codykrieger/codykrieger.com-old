@@ -140,7 +140,7 @@ strong, b {
   & > div {
     border: 1px solid #ccc;
     @include border-radius(4px);
-    @include box-shadow(0px 1px 4px #bbb);
+    @include box-shadow(0px 0px 4px #bbb);
     padding: 10px; }
   div {
     line-height: 1.5; }
@@ -161,6 +161,7 @@ strong, b {
   @include box-shadow(inset 0px 0px 2px #aaa);
   color: #888;
   font-size: 12px;
+  z-index: 5;
 
   a {
     display: inline-block;

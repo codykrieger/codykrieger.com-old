@@ -149,14 +149,17 @@ strong, b {
 #subnav {
   background: #e3e3e3;
   position: absolute;
-  top: -34px;
-  right: 0;
-  padding: 3px 8px;
-  border: 1px dashed #ababab;
+  top: -24px;
+  right: 4px;
+  padding: 3px 6px;
+  border: 1px solid #ababab;
+  border-bottom: none;
   @include border-radius(4px);
-  // @include box-shadow(inset 0px 0px 2px #aaa);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  @include box-shadow(inset 0px 0px 2px #aaa);
   color: #888;
-  font-size: 13px;
+  font-size: 12px;
 
   a {
     display: inline-block;

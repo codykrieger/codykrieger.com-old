@@ -4,7 +4,6 @@ class PagesController < BlueSparks::PagesController
     # magic method to render a given folder's subnav partial
     begin
       subnav = render :partial => "#{current_page}/menu", :layout => "menu_template"
-      subnav.first unless subnav.nil?
     rescue
       # logger.info "subnav error: #{$!}"
 

@@ -7,7 +7,7 @@ gem "mysql"
 gem "rack-contrib"
 
 # deployment
-gem "whiskey_disk", :git => "git://github.com/codykrieger/whiskey_disk.git", :branch => "ssh-t"
+gem "whiskey_disk", :git => "git://github.com/codykrieger/whiskey_disk.git" #, :branch => "ssh-t"
 
 # auth
 gem "devise", "~> 1.1.3"

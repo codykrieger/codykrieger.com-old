@@ -22,10 +22,9 @@
   %body
     #container
       = render :partial => "shared/header"
-      %section#content
+      #content
         %div
-          - if controller_name == "pages"
-            = controller.subnav
+          = subnav
           = yield(:title)
           = yield
     = render :partial => "shared/footer"

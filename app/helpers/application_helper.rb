@@ -38,4 +38,8 @@ module ApplicationHelper
     return retval if request.fullpath.starts_with?(path) && head && path != "/"
     return retval if request.fullpath == path
   end
+
+  def subnav
+    controller.subnav if controller_name == "pages"
+  end
 end

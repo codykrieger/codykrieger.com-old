@@ -140,27 +140,27 @@ strong, b {
   & > div {
     border: 1px solid #ccc;
     @include border-radius(4px);
-    @include box-shadow(0px 0px 4px #bbb);
+    @include box-shadow(0px 1px 4px #bbb);
     padding: 10px; }
   div {
     line-height: 1.5; }
 }
 
 #subnav {
-  background: #d6d6d6;
+  background: #e3e3e3;
   position: absolute;
-  top: -15px;
+  top: -34px;
   right: 0;
   padding: 3px 8px;
-  border: 1px solid #ababab;
+  border: 1px dashed #ababab;
   @include border-radius(4px);
-  @include box-shadow(inset 0px 0px 2px #aaa);
+  // @include box-shadow(inset 0px 0px 2px #aaa);
   color: #888;
+  font-size: 13px;
 
   a {
     display: inline-block;
     margin: 0 0 0 10px;
-    font-size: 13px;
 
     &:first-child {
       margin: 0 0 0 4px; }

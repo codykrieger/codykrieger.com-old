@@ -6,8 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/codykrieger/whiskey_disk.git
-  revision: 828d84a2de1cc46a8d30b1660a424221ca4952e7
-  branch: ssh-t
+  revision: ac8282da45d96af8c91ef843ca6a5fb4cd262cb3
   specs:
     whiskey_disk (0.6.22)
       rake

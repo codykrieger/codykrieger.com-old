@@ -120,7 +120,7 @@ $(document).ready(function() {
 
   // flattr
   
-  if ($('a.FlattrButton')) {
+  if ($('a.FlattrButton').length > 0) {
     (function() {
       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
       s.type = 'text/javascript';

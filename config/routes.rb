@@ -19,5 +19,5 @@ CodykriegerCom::Application.routes.draw do
   
   root :to => 'home#index'
 
-  match '/*slug' => 'pages#show'
+  match '/*slug' => 'pages#show', :constraints => { :fullpath => /^\/(?!assets).+/ }
 end

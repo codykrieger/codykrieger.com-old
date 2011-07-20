@@ -6,6 +6,14 @@
     <description>gfxCardStatus changes and updates.</description>
     <language>en</language>
     <item>
+      <title>Version 2.1</title>
+      <sparkle:releaseNotesLink>
+        http://codykrieger.com/gfxCardStatus/releasenotes/2.1.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 20 Jul 2011 02:03:17 -0700</pubDate>
+      <enclosure url="http://codykrieger.com/downloads/gfxCardStatus-2.1.zip" sparkle:version="2.1" type="application/octet-stream" length="639040" sparkle:dsaSignature="MC4CFQCXF6idAe4Qec3xqBBSBRwkRrMX0QIVAI63G6xTaJTkjLycUC7VHHWAeHxg" />
+    </item>
+    <item>
       <title>Version 2.0.1</title>
       <sparkle:releaseNotesLink>
         http://codykrieger.com/gfxCardStatus/releasenotes/2.0.1.html

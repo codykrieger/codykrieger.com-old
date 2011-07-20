@@ -27,20 +27,20 @@ gem "yard"
 
 # testing/dev
 gem "rails3-generators", :group => :development
-gem "hpricot", :group => :development
-gem "ruby_parser", :group => :development
-gem "rspec-rails", "~> 2.0.0", :group => [:test, :development]
-gem "mocha", :group => [:test]
-gem "factory_girl_rails", :group => [:test, :cucumber]
-gem "faker", :group => [:test]
-gem "autotest", :group => [:test]
-gem "autotest-rails", :group => [:test]
-gem "thin", :group => [:test, :cucumber, :development]
-gem "cucumber", :group => [:cucumber]
-gem "database_cleaner", :group => [:test, :cucumber]
-gem "cucumber-rails", :group => [:cucumber]
-gem "capybara", "~> 0.4.0", :group => [:cucumber]
-gem "launchy", :group => [:cucumber]
-gem "timecop", :group => [:test, :cucumber]
-gem "pickle", :group => [:test, :cucumber]
-gem "evergreen", :require => "evergreen/rails", :group => [:test, :development]
+# gem "hpricot", :group => :development
+# gem "ruby_parser", :group => :development
+# gem "rspec-rails", "~> 2.0.0", :group => [:test, :development]
+# gem "mocha", :group => [:test]
+# gem "factory_girl_rails", :group => [:test, :cucumber]
+# gem "faker", :group => [:test]
+# gem "autotest", :group => [:test]
+# gem "autotest-rails", :group => [:test]
+# gem "thin", :group => [:test, :cucumber, :development]
+# gem "cucumber", :group => [:cucumber]
+# gem "database_cleaner", :group => [:test, :cucumber]
+# gem "cucumber-rails", :group => [:cucumber]
+# gem "capybara", "~> 0.4.0", :group => [:cucumber]
+# gem "launchy", :group => [:cucumber]
+# gem "timecop", :group => [:test, :cucumber]
+# gem "pickle", :group => [:test, :cucumber]
+# gem "evergreen", :require => "evergreen/rails", :group => [:test, :development]

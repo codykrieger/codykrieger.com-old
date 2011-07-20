@@ -3,7 +3,7 @@
 :md
   ## Questions:
   
-  - [What do the **_i_** and the **_d_** icons mean?](#icons)
+  - [What do the **_i_** and the **_d_** icons mean? How can I change them?](#icons)
   - [Is my MacBook Pro supported?](#supported)
   - [What languages is gfxCardStatus localized in?](#languages)
   - [Why doesn't my external display work?](#ext_display)
@@ -14,15 +14,26 @@
   - [Where can I get help?](#help)
 
   <h2 id="icons">What do the <strong><em>i</em></strong> and the 
-  <strong><em>d</em></strong> icons mean?</h2>
+  <strong><em>d</em></strong> icons mean? How can I change them?</h2>
   The **_i_** and **_d_** graphics denote whether your MacBook Pro is using its 
   integrated or discrete GPU. They do not indicate what mode gfxCardStatus is 
   set to.
 
   If you have used gfxCardStatus for a while, you may be more familiar with the 
-  **_n_** graphic than the **_d_**. If you would like to change the icon back, 
-  please read my blog post about it here: 
-  [Changing gfxCardStatus Icons](/blog/2011/03/03/changing-gfxcardstatus-icons.html)
+  **_n_** graphic than the **_d_**. There is a new option in gfxCardStatus v2.1
+  called "Use smart menu bar icons," which will, on 2010-2011 MacBook Pros, show an 
+  'n' for NVIDIA, 'i' for Intel, or 'a' for AMD, depending on what your current GPU is.
+
+  Also, the icons are no longer images. If you wish to have custom image icons, simply 
+  drop the following icons into the gfxCardStatus.app/Contents/Resources folder:
+
+    - integrated.png
+    - integrated-white.png
+    - discrete.png
+    - discrete-white.png
+
+  I have included 'i,' 'd,' 'n,' and 'a' icons that you may use in said folder, or you 
+  can create your own.
 
   <h2 id="supported">Is my MacBook Pro supported?</h2>
   You've come to the right place to find out! You must have a dual-GPU MacBook 
@@ -52,6 +63,10 @@
   - Swedish
   - Portugese
   - Dutch
+  - Russian
+  - Slovak
+  - Ukranian
+  - Czech
 
   <h2 id="ext_display">Why doesn't my external display work?</h2>
   Don't worry - nothing is broken. If your external display is not being 
@@ -107,3 +122,4 @@
   Please shoot me an email! I'd be happy to oblige. 
   <span data-value="cody----codykrieger____com" class="obfuscated">cody{at}codykrieger{dot}com</span>
     
+
